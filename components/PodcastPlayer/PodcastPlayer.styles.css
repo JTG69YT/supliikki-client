@@ -1,0 +1,10 @@
+.player-wrapper {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+  background: #a80065;
+  margin-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}

@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@uiball/loaders": "^1.2.6",
-    "firebase": "^8.7.1",
     "next": "latest",
     "nprogress": "^0.2.0",
     "react": "18.1.0",

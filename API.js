@@ -1,6 +1,7 @@
 import {
     PROMO_ITEMS_BASE_URL,
     PODCAST_ITEM_BASE_URL,
+    HOST_ITEM_BASE_URL,
     HOME_BASE_URL,
     HOST_BASE_URL
   } from './config';
@@ -16,6 +17,10 @@ import {
     },
     fetchPodcast: async (podcastId) => {
       const endpoint = `${PODCAST_ITEM_BASE_URL}${podcastId}&user_id=1`;
+      return await (await fetch(endpoint)).json();
+    },
+    fetchHost: async (hostId) => {
+      const endpoint = `${HOST_ITEM_BASE_URL}${hostId}&user_id=1`;
       return await (await fetch(endpoint)).json();
     },
     fetchHosts: async () => {

@@ -25,6 +25,8 @@ const Home = () => {
           <title>Ladataan...</title>
         </Head>
 
+        <Header />
+
         <Spinner />
       </>
     )

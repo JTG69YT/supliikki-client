@@ -1,4 +1,4 @@
-const API_URL = `http://jesunmaailma.tk/supliikki-cms/api/v1/api.php`;
+const API_URL = `https://admin.jesunmaailma.ml/supliikki-cms/api/v1/api.php`;
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
 const HOME_BASE_URL = `${API_URL}?api_key=${API_KEY}&podcasts=all&user_id=1`;

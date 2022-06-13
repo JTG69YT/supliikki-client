@@ -11,9 +11,9 @@ export const useGetHostByIdFetch = (hostId) => {
       setError(false);
       setLoading(true);
 
-      const podcast = await API.fetchHost(hostId);
+      const host = await API.fetchHost(hostId);
 
-      setState(podcast);
+      setState(host);
     } catch (error) {
       setError(true);
     }

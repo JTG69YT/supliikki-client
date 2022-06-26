@@ -9,11 +9,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-tailwind/react": "^0.3.4",
     "@uiball/loaders": "^1.2.6",
+    "bootstrap": "^5.1.3",
     "next": "latest",
+    "next-auth": "^4.6.1",
     "nprogress": "^0.2.0",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
+    "react": "^18.0.0",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^18.0.0",
     "react-player": "^2.10.1",
     "styled-components": "^5.3.5"
   },

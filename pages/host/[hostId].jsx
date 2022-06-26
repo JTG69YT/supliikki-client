@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Header from '../../components/Header'
 import Spinner from '../../components/Spinner'
 import { useRouter } from 'next/router'
 
@@ -18,8 +17,6 @@ function PodcastPage() {
           <title>Ladataan...</title>
         </Head>
 
-        <Header />
-
         <Spinner />
       </>
     )
@@ -30,7 +27,6 @@ function PodcastPage() {
         <Head>
           <title>Jokin meni vikaan</title>
         </Head>
-        <Header />
         <div>Jokin meni vikaan...</div>
       </>
     )
@@ -45,14 +41,23 @@ function PodcastPage() {
             <link rel="shortcut icon" href="/favicon.png" />
           </Head>
 
-          <Header />
-          <div className='bg-[#ec008c] bg-cover bg-center px-[40px] py-[20px] transition-all duration-[0.3s] ease-in-out'>
-            <div className='flex justify-center items-center max-w-[1366px] mx-auto'>
-              <div className='w-full px-[20px] py-[40px] text-white overflow-hidden m-0'>
-                <h1 className='font-[Anteb] font-bold text-4xl'>{host.name}</h1>
-                <p className='font-[Poppins] text-sm'>{host.description}</p>
-              </div>
+          <div
+            className={`flex items-center justify-between h-screen w-full py-32 lg:py-0 bg-[#1741ef]`}
+          >
+            <div className="space-y-5 px-10">
+              <h1 className="max-w-xl font-[Anteb] font-extrabold text-5xl text-white">
+                {hosts[0].name}
+              </h1>
+              <h2 className="max-w-xl whitespace-pre-wrap font-[Poppins] font-normal text-white">
+                {hosts[0].description}
+              </h2>
             </div>
+
+            <img
+              className="hidden m-32 md:inline md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-lg shadow-2xl"
+              src={hosts[0].host_image}
+              alt=""
+            />
           </div>
         </>
       ))}

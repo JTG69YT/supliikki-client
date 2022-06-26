@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Header from '../components/Header'
 import Spinner from '../components/Spinner'
 
 import { useHostFetch } from '../hooks/useHostFetch'
@@ -15,8 +14,6 @@ function Hosts() {
           <title>Ladataan...</title>
         </Head>
 
-        <Header />
-
         <Spinner />
       </>
     )
@@ -28,7 +25,6 @@ function Hosts() {
         <Head>
           <title>Jokin meni vikaan</title>
         </Head>
-        <Header />
         <div>Jokin meni vikaan...</div>
       </>
     )
@@ -40,8 +36,6 @@ function Hosts() {
         <title>Juontajat - Supliikki</title>
         <link rel="shortcut icon" href="/favicon.png" />
       </Head>
-
-      <Header />
 
       {!loading && hosts[0] ? (
         <>
@@ -62,7 +56,7 @@ function Hosts() {
 
               <img
                 className="hidden m-32 md:inline md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-lg shadow-2xl"
-                src={`https://jesunmaailma.ml/wp-content/uploads/2022/06/logo.png`}
+                src={hosts[0].host_image}
                 alt=""
               />
             </div>

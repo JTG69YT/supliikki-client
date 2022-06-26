@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Header from '../components/Header'
 import Spinner from '../components/Spinner'
 import Link from 'next/link'
 
@@ -25,8 +24,6 @@ const Home = () => {
           <title>Ladataan...</title>
         </Head>
 
-        <Header />
-
         <Spinner />
       </>
     )
@@ -37,7 +34,6 @@ const Home = () => {
         <Head>
           <title>Jokin meni vikaan</title>
         </Head>
-        <Header />
         <div>Jokin meni vikaan...</div>
       </>
     )
@@ -50,8 +46,6 @@ const Home = () => {
           <title>Supliikki - Podcasteja kellon ympäri</title>
           <link rel="icon" href="/favicon.png" />
         </Head>
-
-        <Header />
 
         {!promoItemsLoading && promoItem[0] ? (
           <>

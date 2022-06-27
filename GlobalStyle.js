@@ -20,17 +20,4 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         background: var(---white);
     }
-    body {
-        h1 {
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-        h3 {
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-        p {
-            font-size: 1rem;
-        }
-    }
 `;
